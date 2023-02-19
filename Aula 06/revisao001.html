@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Revisão de JavaScript</title>
+    <link rel="stylesheet" href="estilos/rev001.css">
+</head>
+<body>
+    <main>
+        <h1>Olá, Mundo!</h1>
+        <p>Seja bem vindo à minha primeira revisão de JavaScript</p>
+    </main>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var salario = Number(window.prompt('Digite o valor de seu salário: '))
+        var s = n1 + n2
+        window.alert(`O valor da soma de: ${n1} + ${n2} = ${s}`)
+        var real = salario.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+        window.alert(`Você recebe ${real}`)
+        var resposta = window.alert(`Olá ${nome}! É um prazer em te conhecer!`)
+        var maiusculo = nome.toUpperCase()
+        window.alert(`Seu nome em maiúsculo é: ${maiusculo}`)
+        var minusculo = nome.toLowerCase()
+        window.alert(`Seu nome em minúsculo é: ${minusculo}`)
+        var qtde = nome.length
+        window.alert(`Seu nome tem ${qtde} letras`)
+    </script>
+</body>
+</html>
